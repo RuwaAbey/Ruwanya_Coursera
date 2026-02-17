@@ -9,10 +9,10 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief assignment 1
  *
- * <Add Extended Description Here>
+ * 
  *
  * @author <Add FirsName LastName>
  * @date <Add date >
@@ -27,7 +27,7 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-void main() {
+void main(){
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
@@ -38,6 +38,16 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
+  print_array(test,SIZE);
+  
 }
 
 /* Add other Implementation File Code Here */
+void print_array(unsigned char *array,int size){
+
+	for(int i=0; i < size; i++){
+		printf("test[%d]: %u\n",i,array[i]);
+	
+	}
+
+}

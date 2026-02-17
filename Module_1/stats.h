@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief assignment 1
  *
- * <Add Extended Description Here>
+ * This is a simple programe which can analyze an array of unsigned char data items and
+ * report alaytics on the maximum, minimum, mean, and median of the data set.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ruwanya Abeynayake
+ * @date 17/04/2026
  *
  */
 #ifndef __STATS_H__
@@ -35,6 +36,6 @@
  *
  * @return <Add Return Informaiton here>
  */
-
+void print_array(unsigned char *array, int size);
 
 #endif /* __STATS_H__ */
