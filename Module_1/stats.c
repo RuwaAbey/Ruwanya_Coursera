@@ -37,10 +37,7 @@ void main(){
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  //sort_array(test,SIZE);
-  //print_array(test,SIZE);
-  //find_minimum(test,SIZE);
-  find_mean(test,SIZE);
+  print_statistics(test,SIZE);
 }
 
 /* Add other Implementation File Code Here */
@@ -154,9 +151,53 @@ unsigned char find_mean(unsigned char *array, int size)
 	}
 
 	unsigned char mean  = (unsigned char)(sum/size);
-	printf("mean: %u\n", mean);
+       //printf("mean: %u\n", mean);
         return mean;
 
 }
 
+/**
+ * @brief This function returns the median value of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the median value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return median value of the array
+ */
+unsigned char find_median(unsigned char *array, int size)
+{
+	sort_array(array, size);
+        unsigned char median = (array[size/2] + array[(size/2)-1]) / 2;
+	//printf("median: %u\n", median);
+        return median;
+
+}
+
+/**
+ * @brief This function prints the statistics of an array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and prints the statistics of an array including minimum,
+ * maximum, mean, and median.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return None
+ */
+void print_statistics(unsigned char *array, int size)
+{
+	unsigned char minimum, maximum, mean, median;
+
+	minimum = find_minimum(array, size);
+	maximum = find_maximum(array, size);
+	mean = find_mean(array, size);
+	median = find_median(array,size);
+
+	printf("minimum: %u\nmaximum: %u\nmean: %u\nmedian: %u\n",minimum, maximum, mean, median);
+
+}
 

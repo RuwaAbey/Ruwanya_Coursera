@@ -102,4 +102,32 @@ unsigned char find_minimum(unsigned char *array, int size);
  */
 unsigned char find_mean(unsigned char *array, int size);
 
+/**
+ * @brief This function returns the median value of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the median value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return median value of the array
+ */
+unsigned char find_median(unsigned char *array, int size);
+
+/**
+ * @brief This function prints the statistics of an array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and prints the statistics of an array including minimum, 
+ * maximum, mean, and median.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return None
+ */
+void print_statistics(unsigned char *array, int size);
+
+
 #endif /* __STATS_H__ */
