@@ -13,3 +13,23 @@ software. Alex Fosdick and the University of Colorado are not liable for any
 misuse of this material.
 
 ###*****************************************************************************
+
+This how the Function declaration comments added,
+
+```C
+/* Add Your Declarations and Function Comments here */
+
+/**
+ * @brief <Add Brief Description of Function Here>
+ *
+ * <Add Extended Description Here>
+ *
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ *
+ * @return <Add Return Informaiton here>
+ */
+```
+
