@@ -39,7 +39,7 @@ void main(){
   /* Statistics and Printing Functions Go Here */
   //sort_array(test,SIZE);
   print_array(test,SIZE);
-  find_maximum(test,SIZE);
+  //find_minimum(test,SIZE);
 }
 
 /* Add other Implementation File Code Here */
@@ -93,11 +93,43 @@ void sort_array(unsigned char *array, int size)
 
 }
 
+/**
+ * @brief This function returns the maximum of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the maximum value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return maximum value of the array
+ */
 unsigned char find_maximum(unsigned char *array, int size)
 {
 	sort_array(array, size);
 
-	printf("minimum: %u\n",array[size-1]);
+	//printf("maximum: %u\n",array[size-1]);
 	return array[size-1];
 
 }
+
+/**
+ * @brief This function returns the minimum of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the minimum value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return minimum value of the array
+ */
+unsigned char find_minimum(unsigned char *array, int size)
+{
+        sort_array(array, size);
+
+        printf("minimum: %u\n",array[0]);
+        return array[0];
+
+}
+
