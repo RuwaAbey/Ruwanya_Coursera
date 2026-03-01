@@ -37,9 +37,9 @@ void main(){
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  sort_array(test,SIZE);
+  //sort_array(test,SIZE);
   print_array(test,SIZE);
-  
+  find_maximum(test,SIZE);
 }
 
 /* Add other Implementation File Code Here */
@@ -90,5 +90,14 @@ void sort_array(unsigned char *array, int size)
 		}
 	
 	}
+
+}
+
+unsigned char find_maximum(unsigned char *array, int size)
+{
+	sort_array(array, size);
+
+	printf("minimum: %u\n",array[size-1]);
+	return array[size-1];
 
 }
