@@ -38,8 +38,9 @@ void main(){
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
   //sort_array(test,SIZE);
-  print_array(test,SIZE);
+  //print_array(test,SIZE);
   //find_minimum(test,SIZE);
+  find_mean(test,SIZE);
 }
 
 /* Add other Implementation File Code Here */
@@ -128,8 +129,34 @@ unsigned char find_minimum(unsigned char *array, int size)
 {
         sort_array(array, size);
 
-        printf("minimum: %u\n",array[0]);
+        //printf("minimum: %u\n",array[0]);
         return array[0];
 
 }
+
+/**
+ * @brief This function returns the mean value of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the mean value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return mean value of the array
+ */
+unsigned char find_mean(unsigned char *array, int size)
+{
+	int sum = 0;
+	for (int i = 0; i < size; i++)
+	{
+		sum += array[i];
+	}
+
+	unsigned char mean  = (unsigned char)(sum/size);
+	printf("mean: %u\n", mean);
+        return mean;
+
+}
+
 

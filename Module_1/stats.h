@@ -89,5 +89,17 @@ unsigned char find_maximum(unsigned char *array, int size);
  */
 unsigned char find_minimum(unsigned char *array, int size);
 
+/**
+ * @brief This function returns the mean value of the array.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and return the mean value of the array.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return mean value of the array
+ */
+unsigned char find_mean(unsigned char *array, int size);
 
 #endif /* __STATS_H__ */
