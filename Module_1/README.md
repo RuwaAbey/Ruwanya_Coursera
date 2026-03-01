@@ -11,7 +11,9 @@ misuse of this material.
     ###@date 17/04/2026
     ###@project Introduction to Embedded Systems Software and Development Environments
 
-### This module contain couple of functions that can analyze an array of unsigned char data items and report analytics on the maximum, minimum, mean, and median of the data set.
+###About the module
+ 
+This module contain couple of functions that can analyze an array of unsigned char data items and report analytics on the maximum, minimum, mean, and median of the data set.
 
      stats.c - Implementation file for C-programming code
 
