@@ -36,6 +36,33 @@
  *
  * @return <Add Return Informaiton here>
  */
+
+/**
+ * @brief This function prints the array elements.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and prints the values in the array with its index 
+ *
+ * @param array unsigned char pointer to an n-element data array 
+ * @param size length of the data array
+ * 
+ * @return None
+ */
 void print_array(unsigned char *array, int size);
+
+/**
+ * @brief This function sorts the array from largest to smallest.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and sorts the array from largest to smallest.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return None
+ */
+void sort_array(unsigned char *array, int size);
+
+
 
 #endif /* __STATS_H__ */

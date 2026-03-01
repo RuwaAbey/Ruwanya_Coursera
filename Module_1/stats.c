@@ -37,16 +37,57 @@ void main(){
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  sort_array(test,SIZE);
   print_array(test,SIZE);
   
 }
 
 /* Add other Implementation File Code Here */
+
+/**
+ * @brief This function prints the array elements.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and prints the values in the array with its index
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return None
+ */
 void print_array(unsigned char *array,int size){
 
 	for(int i=0; i < size; i++){
 		printf("test[%d]: %u\n",i,array[i]);
+	
+	}
+
+}
+
+/**
+ * @brief This function sorts the array from largest to smallest.
+ *
+ * This function will take unsigned char pointer to an n-element data array
+ * and its length and sorts the array from largest to smallest.
+ *
+ * @param array unsigned char pointer to an n-element data array
+ * @param size length of the data array
+ *
+ * @return None
+ */
+void sort_array(unsigned char *array, int size)
+{
+
+	for(int i = 0; i < size; i++)
+	{
+		for(int j = 0; j <size-1; j++)
+		{
+			int temp = array[j];
+			if (array[j] > array[j+1]){
+				array[j] = array[j+1];
+				array[j+1] = temp;
+			}
+		}
 	
 	}
 
