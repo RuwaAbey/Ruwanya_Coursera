@@ -9,6 +9,15 @@
  *
  *****************************************************************************/
 
+  /**
+  * @file kl25z.c
+  * @brief This file contains the functions for the KL25Z board.
+  * 
+  * @author Ruwanya Abeynayake
+  * @date 2026-03-22
+  * 
+  */
+
  #include <stdio.h>
  #include "kl25z.h"
 
