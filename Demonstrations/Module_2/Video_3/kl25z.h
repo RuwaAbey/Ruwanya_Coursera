@@ -21,8 +21,6 @@
 #ifndef __KL25Z_H__
 #define __KL25Z_H__
 
-#include <stdio.h>
-
 /**
  * @brief This struct defines the message types for platform
  * 
