@@ -21,7 +21,7 @@
 #ifndef __MY_FILE_H__
 #define __MY_FILE_H__
 
-#define LENGTH_10
+#define LENGTH 10
 
 /* Global Variable*/
 extern int x;

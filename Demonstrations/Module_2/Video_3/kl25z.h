@@ -61,6 +61,6 @@ void kl25z_platform_print(void);
  * 
  * @return None
  */
-void kl25z_platform_log(messages_type_t type)
+void kl25z_platform_log(message_type_t type);
 
 #endif /* __KL25Z_H__ */
