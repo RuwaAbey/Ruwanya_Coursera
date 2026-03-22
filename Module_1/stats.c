@@ -31,14 +31,25 @@ void main(){
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
+  /*Print the array*/
+  printf("---Printing the array---\n");
+  print_array(test,SIZE);
+  printf("---\n");
+
+  printf("---Print statistics---\n");
   /*Print statistics of the array*/
   print_statistics(test,SIZE);
+  printf("---\n");
 
+  printf("---Sort the array---");
   /*Sort the array*/
   sort_array(test,SIZE);
+  printf("\n");
 
+  printf("---Printing sorted array---\n");
   /*Print the sorted array*/
   print_array(test,SIZE);
+  printf("---\n");
 }
 
 /* Add other Implementation File Code Here */
@@ -82,7 +93,7 @@ void sort_array(unsigned char *array, int size)
 		for(int j = 0; j <size-1; j++)
 		{
 			int temp = array[j];
-			if (array[j] > array[j+1]){
+			if (array[j] <  array[j+1]){
 				array[j] = array[j+1];
 				array[j+1] = temp;
 			}
@@ -108,7 +119,7 @@ unsigned char find_maximum(unsigned char *array, int size)
 	sort_array(array, size);
 
 	//printf("maximum: %u\n",array[size-1]);
-	return array[size-1];
+	return array[0];
 
 }
 
@@ -128,7 +139,7 @@ unsigned char find_minimum(unsigned char *array, int size)
         sort_array(array, size);
 
         //printf("minimum: %u\n",array[0]);
-        return array[0];
+	return array[size-1];
 
 }
 
