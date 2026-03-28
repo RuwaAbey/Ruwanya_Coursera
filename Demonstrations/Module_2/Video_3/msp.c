@@ -30,20 +30,20 @@
  * 
  * @return None
  */
- void msp_platfrom_print(void) {
-    printf("MSP Platfrom Selected!\n");
+ void msp_platform_print(void) {
+    printf("MSP Platform Selected!\n");
  }
 
-/**
- * @brief Logs the messages based on types
- * 
- * This function prints the messages based on the message type given as input,
- * which the message types are defined in the message_type_t enum. 
- * 
- * @param type: The message type to be logged
- * 
- * @return None
- */
+ /**
+  * @brief Logs the messages based on types
+  *
+  * This function prints the messages based on the message type given as input,
+  * which the message types are defined in the message_type_t enum.
+  *
+  * @param type: The message type to be logged
+  *
+  * @return None
+  */
  void msp_platform_log(message_type_t type){
     switch(type) {
         case MSG_INIT:

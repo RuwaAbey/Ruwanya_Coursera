@@ -30,8 +30,8 @@
  * 
  * @return None
  */
- void kl25z_platfrom_print(void) {
-    printf("KL25Z Platfrom Selected!\n");
+ void kl25z_platform_print(void) {
+    printf("KL25Z Platform Selected!\n");
  }
 
 /**
