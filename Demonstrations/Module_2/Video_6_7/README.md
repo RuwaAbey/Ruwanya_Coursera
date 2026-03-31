@@ -61,3 +61,14 @@ This will clean the build directory of generated files
 ```bash
  $ make clean
 ```
+
+```bash
+make main.o
+```
+
+Make uses a pattern match rule to match a target
+
+```make
+main.o: main.c
+     $(CC) -C main.c -o main.o $ (CFLAGS)
+```
